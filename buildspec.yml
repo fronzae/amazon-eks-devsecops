@@ -9,8 +9,8 @@ phases:
       - export PATH=$PWD/:$PATH
       - apt-get update && apt-get -y install jq python3-pip python3-dev && pip3 install --upgrade awscli
       - pip3 install typing
-      - python -V
-      - python -m pip install awscliv2
+      - python3 -V
+      - python3 -m pip install awscliv2
       - wget --quiet https://aqua-binary.s3.amazonaws.com/scannercli
       - chmod +x scannercli
   pre_build:
